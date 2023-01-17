@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foxy Search Engine Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <h1>IND-TIME-DATE</h1>
+</head>
+<body>
+    <div id="clock" class="topcorner"></div>
+    <div id="time" class="center"></div>
+    
+    <section>
+        <div class="main">
+            <img src="foxy.png">
+            <div class="searchBx">
+                <input type="text" name="" class="query" value="">
+                <div class="icons">
+                    <div><img src="search1.png"></div>
+                    <div><img src="mic.png"></div>
+                </div>
+            </div>
+            <div class="button">
+                <button class="searchBtn">Foxy Search</button>
+                
+            </div>
+        </div>
+    </section>
+    <script>
+        let query=document.querySelector('.query');
+        let searchBtn=document.querySelector('.searchBtn');
+        searchBtn.onclick= function(){
+            let url='https://www.google.com/search?q='+query.value;
+            window.open(url,"_blank");
+        }
+    </script>
+    <script src="//code.tidio.co/kvhjshncufmeluqrx3r5okjr4regmjrf.js" async></script>
+</body>
+</html>
